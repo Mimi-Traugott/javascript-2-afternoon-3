@@ -87,7 +87,13 @@ multiply(4, 3, function(answer){
 
 //Code Here 
 function contains (array, name, cb){
-  if ()
+  for (let i =0; i < array.length; i++){
+    if (array[0]=== name) {
+      cb(true)
+    } else {
+      cb(false)
+    }
+  }
 }
 
 // Do not edit the code below.
@@ -100,8 +106,6 @@ contains(names, 'Colt', function(result){
 });
 // Do not edit the code above.
 
-
-
 ////////// PROBLEM 5 //////////
 
 /*
@@ -111,12 +115,22 @@ contains(names, 'Colt', function(result){
 
 //Code Here
 
+function uniq (arr, cb) {
+  for (let i = 0; i < arr.length; i++){
+    for(let j = arr.length-1; j >= 0; j--){
+      if (arr[i] == arr[j] && i != j){
+        arr.splice(0)
+        }
+      }
+    }
+    cb(arr)
+  }
+ 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
 });
 // Do not edit the code above.
-
 
 
 ////////// PROBLEM 6 //////////
