@@ -27,7 +27,9 @@
   Then invoke the callback function, passing in the first element in the array as it's argument.
 */
 
-// Code Here 
+function first(array, cb){
+  cb(array[0])
+}
 
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -38,8 +40,6 @@ first(names, function(firstName){
 });
 // Do not edit the code above.
 
-
-
 ////////// PROBLEM 2 //////////
 
 /*
@@ -47,7 +47,9 @@ first(names, function(firstName){
   Then invoke the callback, passing in the last element in the array as the argument.
 */
 
-//Code Here
+function last(array, cb){
+  cb(array[array.length-1])
+}
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -55,8 +57,6 @@ last(names, function(lastName){
   return lastName;
 });
 // Do not edit the code above.
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -66,14 +66,15 @@ last(names, function(lastName){
 */
 
 //Code Here
+function multiply(num1, num2, cb) {
+  cb(num1*num2)
+}
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
 });
 // Do not edit the code above.
-
-
 
 ////////// PROBLEM 4 //////////
 
@@ -85,6 +86,9 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains (array, name, cb){
+  if ()
+}
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
